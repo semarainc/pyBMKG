@@ -1,6 +1,8 @@
 # pyBMKG
 Unofficial BMKG Module For Developer To Get Info About Weather, Earthquake in Indonesia
 
+Current Version: 0.1
+
 INDONESIA
   Module ini berfungsi untuk membantu anda untuk melakukan pengecekan terhadap cuaca maupun gempa bumi yang ada di Indonesia. Namun, untuk saat ini yang baru terimplementasi baru hanya gempa saja.
   
