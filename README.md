@@ -9,7 +9,10 @@ INDONESIA
   
 Penggunaan
    
-   1. Silahkan Clone Repo Ini
+    1. Silahkan Clone Repo Ini
+    
     2. Letakkan Folder Module Di Dalam file Project
+    
     3. untuk import gunakan --> from pybmkg import PyBMKGApi
+    
     4. Terdapat Example Penggunaan Module ini di Folder Example
