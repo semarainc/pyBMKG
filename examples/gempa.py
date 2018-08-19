@@ -63,26 +63,43 @@ def main():
 				longitude_gempa = float(temp_coord[1])
 
 				bali_terdampak = "Null"
+<<<<<<< HEAD
 				if (float(now["magnitude"]) >= 5.0) and (haversine(latitude_bali, longitude_bali, latitude_gempa, longitude_gempa) <= 200)  :
+=======
+				if ('denpasar' in str(now["dirasakan"]).lower()) or ('bali' in str(now["dirasakan"]).lower()):
+>>>>>>> 751a8061afe1b9b8ceab8380840ab9b5f2c1574b
 					bali_terdampak = "Ya"
 				else:
 					bali_terdampak = "Tidak"
 
 
 				print("\n\n[NEWS].................INFO GEMPA...............[NEWS]")
+<<<<<<< HEAD
 				print("\tTanggal: %s %s" % (now["tanggal"],now["jam"]))
 				print("\tKoordinat: %s Posisi: %s" % (now["koordinat"], now["posisi"]))
 				print("\tMagnitude: %s SR(Skala Ritcher)" % (now["magnitude"]))
 				print("\tKedalaman: %s" % (now["kedalaman"]))
 				print("\tKeterangan: \n\t%s\n" % (now["wilayah"]))
 				#print("\tDirasakan: \n\t%s\n" % (now["dirasakan"]))
+=======
+				print("\tTanggal: %s" % (now["tanggal"]))
+				print("\tKoordinat: %s Posisi: %s" % (now["koordinat"], now["posisi"]))
+				print("\tMagnitude: %s SR(Skala Ritcher)" % (now["magnitude"]))
+				print("\tKedalaman: %s" % (now["kedalaman"]))
+				print("\tKeterangan: \n\t%s\n" % (now["keterangan"]))
+				print("\tDirasakan: \n\t%s\n" % (now["dirasakan"]))
+>>>>>>> 751a8061afe1b9b8ceab8380840ab9b5f2c1574b
 				print("\tJarak Dari Bali (Denpasar): %s KM" % (haversine(latitude_bali, longitude_bali, latitude_gempa, longitude_gempa)) )
 				print("\tPerkiraan Bali Terkena Dampak: %s" % (bali_terdampak))
 				print("[News]..................INFO GEMPA...............[NEWS]\n\n")
 				if bali_terdampak.lower() == "ya":
 					print("---------------------------- WARNING GEMPA TERDETEKSI ----------------------------")
 				print("Waiting For Newest EarthQuake Info....")
+<<<<<<< HEAD
 				tanggal = now["jam"]
+=======
+				tanggal = now["tanggal"]
+>>>>>>> 751a8061afe1b9b8ceab8380840ab9b5f2c1574b
 
 	except requests.exceptions.RequestException as e:
 		print("[Error] Detected Error")
