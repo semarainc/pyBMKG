@@ -1,7 +1,7 @@
 # pyBMKG
 Unofficial BMKG Module For Developer To Get Info About Weather, Earthquake in Indonesia
 
-Current Version: 0.1
+Current Version: 0.4
 
 INDONESIA
   
